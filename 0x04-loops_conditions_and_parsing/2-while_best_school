@@ -2,8 +2,8 @@
 # Write a Bash script that displays Best School 10 times
 
 x=1
-while [ $x -le 10 ]
+while [ $x -lt 10 ]
 do
     echo "Best School"
-    x=$(( $x + 1 ))
+    x=$(( x + 1 ))
 done
