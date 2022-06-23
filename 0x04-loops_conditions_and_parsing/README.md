@@ -2,7 +2,7 @@
 ## About Bash projects
 
 Unless stated, all your projects will be auto-corrected with Ubuntu 20.04 LTS.
-Background Context
+# Background Context
 
 [![Bash](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/6/b07e3333b1edfb9beed5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220623%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220623T200127Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=52d2de02b8ee7168408092a5363744cc1144bb8bbbe5443505d6cd9fe62c981e)](https://youtu.be/BC2neyc5GcI)
 
