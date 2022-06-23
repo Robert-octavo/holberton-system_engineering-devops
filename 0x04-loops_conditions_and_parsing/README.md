@@ -3,7 +3,9 @@
 
 Unless stated, all your projects will be auto-corrected with Ubuntu 20.04 LTS.
 Background Context
-![](https://youtu.be/BC2neyc5GcI)
+
+[![Bash](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2019/6/b07e3333b1edfb9beed5.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20220623%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20220623T200127Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=52d2de02b8ee7168408092a5363744cc1144bb8bbbe5443505d6cd9fe62c981e)](https://youtu.be/BC2neyc5GcI)
+
 # **Resources**
 
 ## Read or watch:
@@ -50,8 +52,16 @@ Background Context
 
 [Shellcheck](https://intranet.hbtn.io/rltoken/E7Pr2zeM3cdY5-C0HKwtbw) is a tool that will help you write proper Bash scripts. It will make recommendations on your syntax and semantics and provide advice on edge cases that you might not have thought about. *Shellcheck* is your friend! **All your Bash scripts must pass Shellcheck without any error or you will not get any points on the task.**
 
-Shellcheck is available on the school’s computers. If you want to use it on your own computer, here is how to install it.
+Shellcheck is available on the school’s computers. If you want to use it on your own computer, here is how to [install it](https://intranet.hbtn.io/rltoken/SOX0HZTMgzHbcxrvU1X4hw).
 
 Examples:
 
-Not passing Shellcheck:
+Not passing ***Shellcheck***:
+
+![Not Passing](https://github.com/Robert-octavo/holberton-system_engineering-devops/blob/main/0x04-loops_conditions_and_parsing/img/Vxotqyj.png)
+
+Passing ***Shellcheck***:
+
+![Passing](https://github.com/Robert-octavo/holberton-system_engineering-devops/blob/main/0x04-loops_conditions_and_parsing/img/ubHWxDU.png)
+
+For every feedback, Shellcheck will provide a code that you can use to get more information about the issue, for example for code SC2034, you can browse https://github.com/koalaman/shellcheck/wiki/SC2034.
