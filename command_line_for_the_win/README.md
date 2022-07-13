@@ -15,4 +15,4 @@ This project is NOT mandatory at all. It is 100% optional. Doing any part of thi
 * Create a screenshot, showing that you completed the required levels
 * Push this screenshot with the right name to GitHub, in either the PNG or JPEG format
 
-![]()
+![Command Challenge](https://github.com/Robert-octavo/holbertonschool-system_engineering-devops/blob/main/command_line_for_the_win/cmdChallenge.PNG)
