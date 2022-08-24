@@ -1,4 +1,9 @@
 # to install nginx
+exec {'install':
+  provider => shell,
+  command  => 'sudo apt-get -y update ; sudo apt-get -y install nginx ; sudo service nginx start',
+}
+
 package { 'nginx':
   ensure => installed,
 }
