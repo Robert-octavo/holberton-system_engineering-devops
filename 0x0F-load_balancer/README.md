@@ -7,7 +7,7 @@ For this project, we expect you to look at these concepts:
 - [Load balancer](https://intranet.hbtn.io/concepts/46)
 - [Web stack debugging](https://intranet.hbtn.io/concepts/68)
 
-![load balancer]()
+![load balancer](https://github.com/Robert-octavo/holbertonschool-system_engineering-devops/blob/main/0x0F-load_balancer/load%20balancer.png)
 
 # Background Context
 
