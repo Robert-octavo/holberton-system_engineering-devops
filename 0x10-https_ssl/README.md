@@ -7,6 +7,8 @@ For this project, we expect you to look at these concepts:
 - [DNS](https://intranet.hbtn.io/concepts/12)
 - [Web stack debugging](https://intranet.hbtn.io/concepts/68)
 
+![https](https://github.com/Robert-octavo/holbertonschool-system_engineering-devops/blob/main/0x10-https_ssl/https.png)
+
 # Background Context
 ## What happens when you don’t secure your website traffic?
 

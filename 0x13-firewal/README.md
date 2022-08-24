@@ -6,6 +6,8 @@ For this project, we expect you to look at this concept:
 
 * [Web stack debugging](https://intranet.hbtn.io/concepts/68)
 
+![firewall](https://github.com/Robert-octavo/holbertonschool-system_engineering-devops/blob/main/0x13-firewal/firewall.png)
+
 # Resources
 
 ## **Read or watch:**
