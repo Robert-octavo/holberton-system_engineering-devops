@@ -1,8 +1,8 @@
 # to install nginx
-exec {'install':
-  provider => shell,
-  command  => 'sudo apt-get -y update ; sudo apt-get -y install nginx ; sudo service nginx start',
-}
+# exec {'install':
+#  provider => shell,
+#  command  => 'sudo apt-get -y update ; sudo apt-get -y install nginx ; sudo service nginx start',
+# }
 
 package { 'nginx':
   ensure => installed,
@@ -11,6 +11,7 @@ package { 'nginx':
 file_line { 'redirect_me':
   ensure => 'present',
   path   => '/etc/nginx/sites-enabled/default',
+  after  => 'listen 80 default_server;',
   line   => 'rewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4 permanent;',
 }
 
