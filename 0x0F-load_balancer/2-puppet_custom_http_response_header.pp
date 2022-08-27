@@ -1,4 +1,6 @@
 # to install nginx
+
+host = "${HOSTNAME}"
 exec {'update':
   provider => shell,
   command  => 'sudo apt-get -y update',
@@ -20,7 +22,7 @@ exec {'install':
 #}
 
 exec { 'file':
-  command  => 'sudo sed -i "/server_name _;/a \        add_header X-Served-By ${HOSTNAME};" /etc/nginx/sites-enabled/default',
+  command  => 'sudo sed -i "/server_name _;/a \        add_header X-Served-By $host;" /etc/nginx/sites-enabled/default',
   provider => shell,
 }
 
