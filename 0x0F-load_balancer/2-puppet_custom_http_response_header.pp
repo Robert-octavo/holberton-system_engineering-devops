@@ -1,6 +1,6 @@
 # to install nginx
 
-host = "${HOSTNAME}"
+host = "${hostname}"
 exec {'update':
   provider => shell,
   command  => 'sudo apt-get -y update',
