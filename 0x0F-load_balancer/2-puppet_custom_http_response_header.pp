@@ -1,6 +1,7 @@
 # to install nginx
 
-host = "${hostname}"
+$host = "[${hostname}]"
+
 exec {'update':
   provider => shell,
   command  => 'sudo apt-get -y update',
@@ -11,7 +12,7 @@ exec {'install':
   command  => 'sudo apt-get -y install nginx',
 }
 
-#package { 'nginx':
+#package { 'nginx':a
 #  ensure => installed,
 #}
 
@@ -26,7 +27,7 @@ exec { 'file':
   provider => shell,
 }
 
-service { 'nginx':
-  ensure  => running,
-  require => Package['nginx'],
+exec { 'restart-nginx':
+  provider => shell,
+  command  => 'sudo service nginx restart',
 }
