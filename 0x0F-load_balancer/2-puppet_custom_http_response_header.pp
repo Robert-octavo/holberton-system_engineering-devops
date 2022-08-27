@@ -1,8 +1,8 @@
 # to install nginx
-# exec {'install':
-#  provider => shell,
-#  command  => 'sudo apt-get -y update ; sudo apt-get -y install nginx ; sudo service nginx start',
-# }
+exec {'update':
+  provider => shell,
+  command  => 'sudo apt-get -y update',
+}
 
 package { 'nginx':
   ensure => installed,
@@ -14,7 +14,7 @@ package { 'nginx':
 #  line   => 'add_header X-Served-By ${HOSTNAME};',
 #}
 
- exec { 'file':
+exec { 'file':
   command  => 'sudo sed -i "/server_name _;/a \        add_header X-Served-By ${HOSTNAME};" /etc/nginx/sites-enabled/default',
   provider => 'shell',
 }
