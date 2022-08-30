@@ -1,6 +1,6 @@
 # to install nginx
 
-$host = "add_header X-Served-by [${hostname}];"
+$host = "add_header X-Served-by ${hostname};"
 
 exec {'update':
   provider => shell,
