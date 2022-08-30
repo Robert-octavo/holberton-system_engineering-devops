@@ -13,7 +13,7 @@ For this project, we expect you to look at these concepts:
 
 * [Web stack debugging](https://intranet.hbtn.io/concepts/68)
 
-![MySQL]()
+![MySQL](https://github.com/Robert-octavo/holbertonschool-system_engineering-devops/blob/main/0x14-mysql/Mysql.png)
 
 ## **man or help:**
 
