@@ -14,14 +14,14 @@ if __name__ == '__main__':
     tasks = requests.get(url + 'todos', params={'userId': sys.argv[1]}).json()
     # print(tasks)
     info_tasks = []
-    user_id = sys.argv[1]
+    user_id = str(sys.argv[1])
 
     for task in tasks:
         info_tasks.append([user_id,
                            user.get('name'),
                            task.get('completed'),
                            task.get('title')])
-    with open(str(user_id) + '.csv', 'w', encoding='UTF8', newline='')\
+    with open(user_id + '.csv', 'w', encoding='UTF8', newline='')\
          as f:
         writer = csv.writer(f, delimiter=',', quotechar='"',
                             quoting=csv.QUOTE_ALL)
