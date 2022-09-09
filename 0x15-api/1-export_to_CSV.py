@@ -21,8 +21,7 @@ if __name__ == '__main__':
                            user.get('name'),
                            task.get('completed'),
                            task.get('title')])
-    with open(user_id + '.csv', 'w', encoding='UTF8', newline='')\
-         as f:
+    with open(user_id + '.csv', 'w', encoding='UTF8', newline='') as f:
         writer = csv.writer(f, delimiter=',', quotechar='"',
                             quoting=csv.QUOTE_ALL)
         for task in info_tasks:
