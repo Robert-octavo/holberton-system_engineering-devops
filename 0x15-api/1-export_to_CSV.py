@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     for task in tasks:
         info_tasks.append([user_id,
-                           user.get('name'),
+                           user.get('username'),
                            task.get('completed'),
                            task.get('title')])
     with open(user_id + '.csv', 'w', encoding='UTF8', newline='') as f:
