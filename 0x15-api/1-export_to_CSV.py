@@ -5,6 +5,7 @@ import csv
 import requests
 import sys
 
+
 if __name__ == '__main__':
     """Python script to export data in the CSV format"""
     url = 'https://jsonplaceholder.typicode.com/'
@@ -18,8 +19,8 @@ if __name__ == '__main__':
                            user.get('name'),
                            task.get('completed'),
                            task.get('title')])
-
-    with open('{}.csv'.format(sys.argv[1]), 'w', encoding='UTF8', newline='')\
+    user_id = sys.argv[1]
+    with open(str(user_id) + '.csv', 'w', encoding='UTF8', newline='')\
          as f:
         writer = csv.writer(f, delimiter=',', quotechar='"',
                             quoting=csv.QUOTE_ALL)
