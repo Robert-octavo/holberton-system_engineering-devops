@@ -6,6 +6,7 @@ import requests
 import sys
 
 if __name__ == '__main__':
+    """Python script to export data in the CSV format"""
     url = 'https://jsonplaceholder.typicode.com/'
     user = requests.get(url + f'users/{sys.argv[1]}').json()
     # print(user)
