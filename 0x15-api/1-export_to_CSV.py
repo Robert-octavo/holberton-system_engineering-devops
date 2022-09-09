@@ -8,7 +8,7 @@ import sys
 if __name__ == '__main__':
     """Python script to export data in the CSV format"""
     url = 'https://jsonplaceholder.typicode.com/'
-    user = requests.get(url + f'users/{sys.argv[1]}').json()
+    user = requests.get(url + 'users/{}'.format(sys.argv[1])).json()
     # print(user)
     tasks = requests.get(url + 'todos', params={'userId': sys.argv[1]}).json()
     # print(tasks)
@@ -19,7 +19,8 @@ if __name__ == '__main__':
                            task.get('completed'),
                            task.get('title')])
 
-    with open(f'{sys.argv[1]}.csv', 'w', encoding='UTF8', newline='') as f:
+    with open('{}.csv'.format(sys.argv[1]), 'w', encoding='UTF8', newline='')\
+         as f:
         writer = csv.writer(f, delimiter=',', quotechar='"',
                             quoting=csv.QUOTE_ALL)
         for task in info_tasks:
