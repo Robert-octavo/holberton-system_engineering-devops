@@ -11,7 +11,7 @@ if __name__ == '__main__':
     returns information about his/her TODO list progress
     """
     url = 'https://jsonplaceholder.typicode.com/'
-    user = requests.get(url + f'users/{sys.argv[1]}').json()
+    user = requests.get(url + 'users/{}'.format(sys.argv[1])).json()
     # print(user)
     tasks = requests.get(url + 'todos', params={'userId': sys.argv[1]}).json()
     # print(tasks)
