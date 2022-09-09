@@ -14,7 +14,7 @@ if __name__ == '__main__':
     info_tasks = []
     for task in tasks:
         disct = {'task': task.get('title'),
-                 'completed': task.get('completed'), 
+                 'completed': task.get('completed'),
                  'username': user.get('name')}
         info_tasks.append(disct)
     disct = {f'{sys.argv[1]}': info_tasks}
